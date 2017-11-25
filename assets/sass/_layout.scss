@@ -1,0 +1,44 @@
+html, body {
+  background-color: #ffffff;
+  font-size: 13px;
+}
+
+#container {
+  width: 976px;
+  height: 1%;
+  margin: 30px auto 40px;
+  padding: 25px 24px 24px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  opacity: 0.91;
+}
+
+header {
+  width: 100%;
+
+  h1 {
+    display: block;
+    margin: 49px 0 9px 4px;
+  }
+
+  .first {
+    ul {
+      @extend .clx;
+      li {
+        font-size: 100%;
+        border-right: 1px solid #666;
+        @include float(fl);
+        padding: 0 15px;
+        &:first-child { border-left: 1px solid #666; }
+        a {
+          color: #666;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
