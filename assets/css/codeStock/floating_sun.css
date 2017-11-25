@@ -1,0 +1,23 @@
+*{ margin:0; padding:0; }
+	.content{position:relative; *zoom:1; z-index:100;}
+	.content:after {
+	    display: block;
+	    clear: both;
+	    height: 0.01px;
+	    content: "";
+	}
+			
+	.floating-widget.floating {
+	    position: fixed;
+	    top: 0;
+	}
+	.floating-widget.pinned-bottom {
+	    position: absolute;
+	    bottom: 0;
+	    _position: static;
+	}
+			
+	#sun{top:30px; left:30px; position:absolute;}
+	#cloud1{ position:absolute; top:60px; left: auto; z-index:5; }  
+	#cloud2{ position:absolute; top:40px; left: -250px; z-index:4; }  
+	#cloud3{ position:absolute; top:25px; left: -100px; z-index:3; }  

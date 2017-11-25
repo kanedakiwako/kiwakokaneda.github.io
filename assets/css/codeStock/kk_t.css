@@ -1,0 +1,80 @@
+
+a:link{ color:#444444; text-decoration:none; }
+a:visited{ color:#444444; text-decoration:none; }
+a:hover{ color:black; text-decoration:none; }
+a:active{ color:black; text-decoration:none; }
+
+body{
+	background color:white;
+	font-size:8pt;
+	color:#444444;
+	font-family: VERDANA,ARIAL,SANS-SERIF;
+	line-height:150%;
+	letter-spacing:2px;
+	background-image:url(../img/white.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed;
+	margin:10px; 
+	padding:0px;
+}
+
+img { border-width : 0 ;}
+
+.neko{
+	letter-spacing:2px;
+	line-height:150%;
+	font-size: 11pt;
+}
+
+.kotori{
+	letter-spacing:2px;
+	line-height:150%;
+	font-size: 8pt;
+}
+
+.kitune{
+	letter-spacing:2px;
+	line-height:150%;
+	font-size: 8pt;
+}
+
+.uma{
+	font-weight:bold;
+	letter-spacing:2px;
+	line-height:150%;
+	font-size: 8pt;
+}
+
+.tanuki{
+	color:black;
+	letter-spacing:2px;
+	font-size: 8pt;
+}
+
+.inosisi{
+	letter-spacing:2px;
+	line-height:150%;
+	font-size: 7pt;
+}
+
+.osaru{
+	color:#FF6666;
+	letter-spacing:2px;
+	line-height:150%;
+	font-size: 8pt;
+	color:#FF6666;
+}
+
+#snow{ 
+	position:absolute; 
+	top:10px; 
+	right:10px; 
+}
+
+#ohisama{
+	position:absolute;
+	bottom:10px; 
+	left:10px; 
+}
+

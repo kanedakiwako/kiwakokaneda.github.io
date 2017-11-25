@@ -1,0 +1,18 @@
+
+/* Setting
+---------------------------*/
+
+$preFix: 'kk';
+$prefixList: -webkit-, -moz-, -ms-, -o-, null;
+$fa-font-path: "/assets/fonts/" !default;
+
+// border size
+$side: 1px;
+
+// spacing change on/off
+$spaceClass: true !default;
+$spacePadding: true !default;
+$endValue: 3 !default;
+
+// float on/off
+$generalStyle: true;

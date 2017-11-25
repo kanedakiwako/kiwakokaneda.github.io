@@ -1,0 +1,379 @@
+/*! ========================================
+
+kk web
+
+======================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Setting
+---------------------------*/
+.hidden {
+  display: none;
+}
+
+.clx, header .first ul, #cd .kkCdList,
+#cd .cdColLA,
+#cd .cdColLB,
+#cd .cdColLC,
+#cd .cdColLD, #cd .kitune, #gallery #blog {
+  display: block;
+  min-height: 1%;
+}
+.clx:after, header .first ul:after, #cd .kkCdList:after,
+#cd .cdColLA:after,
+#cd .cdColLB:after,
+#cd .cdColLC:after,
+#cd .cdColLD:after, #cd .kitune:after, #gallery #blog:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+* html .clx, * html header .first ul, header .first * html ul, * html #cd .kkCdList, #cd * html .kkCdList,
+* html #cd .cdColLA,
+#cd * html .cdColLA,
+* html #cd .cdColLB,
+#cd * html .cdColLB,
+* html #cd .cdColLC,
+#cd * html .cdColLC,
+* html #cd .cdColLD,
+#cd * html .cdColLD, * html #cd .kitune, #cd * html .kitune, * html #gallery #blog, #gallery * html #blog {
+  height: 1%;
+  /*\*/
+  /*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+
+.mt0 {
+  margin-top: 0px !important;
+}
+
+.mb0 {
+  margin-bottom: 0px !important;
+}
+
+.pt0 {
+  padding-top: 0px !important;
+}
+
+.pb0 {
+  padding-bottom: 0px !important;
+}
+
+.mt5 {
+  margin-top: 5px !important;
+}
+
+.mb5 {
+  margin-bottom: 5px !important;
+}
+
+.pt5 {
+  padding-top: 5px !important;
+}
+
+.pb5 {
+  padding-bottom: 5px !important;
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+.pt10 {
+  padding-top: 10px !important;
+}
+
+.pb10 {
+  padding-bottom: 10px !important;
+}
+
+.mt15 {
+  margin-top: 15px !important;
+}
+
+.mb15 {
+  margin-bottom: 15px !important;
+}
+
+.pt15 {
+  padding-top: 15px !important;
+}
+
+.pb15 {
+  padding-bottom: 15px !important;
+}
+
+p {
+  line-height: 1.3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.eb1 {
+  margin-bottom: 1em;
+}
+
+.eb2 {
+  margin-bottom: 2em;
+}
+
+.eb3 {
+  margin-bottom: 3em;
+}
+
+.eb4 {
+  margin-bottom: 4em;
+}
+
+html, body {
+  background-color: #ffffff;
+  font-size: 13px;
+}
+
+#container {
+  width: 976px;
+  height: 1%;
+  margin: 30px auto 40px;
+  padding: 25px 24px 24px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  opacity: 0.91;
+}
+
+header {
+  width: 100%;
+}
+header h1 {
+  display: block;
+  margin: 49px 0 9px 4px;
+}
+header .first ul li {
+  font-size: 100%;
+  border-right: 1px solid #666;
+  float: left;
+  padding: 0 15px;
+}
+header .first ul li:first-child {
+  border-left: 1px solid #666;
+}
+header .first ul li a {
+  color: #666;
+  padding: 0 5px;
+}
+
+.kkbox {
+  margin-top: 70px;
+  padding-left: 5px;
+}
+.kkbox article p {
+  margin-top: 15px;
+  display: block;
+  font-weight: lighter;
+  line-height: normal;
+}
+.kkbox article p span {
+  display: block;
+}
+.kkbox article p:last-child {
+  padding: 2em 0 1em;
+}
+
+#cd {
+  width: 850px;
+  margin: 300px auto;
+  background-color: #ececec;
+}
+#cd .kitune {
+  width: 400px;
+  margin: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+#cd .kitune .kkCdImage {
+  width: 180px;
+  float: left;
+}
+#cd .kitune .kkCdImage img {
+  width: 110px;
+  margin: 20px auto 10px;
+  padding: 0 15px;
+  display: block;
+}
+#cd .kitune .kkCdImage span {
+  display: block;
+  color: red;
+  font-size: 116%;
+  text-align: center;
+}
+#cd .kitune .kkCdList {
+  width: 220px;
+  float: right;
+}
+#cd .kitune .kkCdList dl {
+  margin: 20px 0 20px 0;
+}
+#cd .kitune .kkCdList dl dt {
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+#cd .kitune .kkCdList dl dd {
+  font-weight: bold;
+}
+#cd .kitune .kkCdList ul {
+  width: 200px;
+  list-style-type: none;
+}
+#cd .kitune .kkCdList ul li {
+  padding: 2px 0;
+  line-height: 1.2em;
+}
+#cd .kitune .kkCdList ul li:last-child {
+  display: block;
+  margin-top: 7px;
+}
+#cd .kitune .kkCdList ul li a {
+  display: inline;
+  letter-spacing: -0.1;
+  color: #666;
+  text-decoration: none;
+}
+#cd .kitune .kkCdList ul li a:hover {
+  display: inline;
+  letter-spacing: -0.1;
+  color: #00aadd;
+  text-decoration: none;
+}
+
+#oto {
+  width: 850px;
+  margin: 300px auto 50px;
+}
+#oto figure {
+  margin-top: 50px;
+}
+
+#gallery {
+  width: 850px;
+  margin: 300px auto 500px;
+}
+#gallery #blog {
+  list-style-type: none;
+}
+#gallery #blog li {
+  width: 98px;
+  height: 50px;
+  float: left;
+  display: inline-block;
+  margin: 15px 7px 0 7px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 5px #888;
+  position: relative;
+}
+#gallery #blog li a {
+  width: 98px;
+  height: 50px;
+  display: block;
+}
+#gallery #blog li a:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  ms-filter: "alpha(opacity=60)";
+}
+#gallery #blog li img {
+  clip: rect(0px, 100px, 50px, 0);
+  position: absolute;
+}
+
+#hyoro_c {
+  position: absolute;
+  top: 70px;
+  left: 1000px;
+  z-index: -100;
+}
+
+#pagetop {
+  display: none;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-left: -83px;
+  z-index: 100;
+}
+#pagetop a {
+  height: 40px;
+  width: 150px;
+  text-decoration: none;
+  background: url(../img/page-top.png) no-repeat center center;
+  display: block;
+  /*
+-webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+*/
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  filter: alpha(opacity=30);
+  opacity: .30;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+#pagetop a:hover {
+  filter: alpha(opacity=65);
+  opacity: .65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+}
