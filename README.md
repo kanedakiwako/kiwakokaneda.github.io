@@ -1,2 +1,0 @@
-# kiwakokaneda
-web site
