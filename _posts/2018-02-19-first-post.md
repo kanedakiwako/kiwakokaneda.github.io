@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Post"
+title: "x a"
 author: "kiwakokaneda"
 ---
 

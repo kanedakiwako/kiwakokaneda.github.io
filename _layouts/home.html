@@ -7,9 +7,9 @@ layout: default
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <h1 class="catalogue-title"><time datetime="{{ post.date }}">{{ post.date | date: "%B %d, %Y" }}</time></h1>
         <div class="catalogue-line"></div>
-        {{ post.excerpt | truncate: 77 }}
+        <!-- {{ post.excerpt | truncate: 77 }} -->
       </div>
     </a>
   {% endfor %}
