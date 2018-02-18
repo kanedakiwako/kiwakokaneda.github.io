@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          金田 貴和子 / Kiwako Kaneda
+        </a>
+        <ul>
+          <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+          <li><a href="{{ '/music' | prepend: site.baseurl }}">Music</a></li>
+          <li><a href="{{ site.baseurl }}/">Posts</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}.
+      </span>
+    </footer>
+
+    <script src="{{ "/assets/jquery-1.11.1.js" | relative_url }}" type="text/javascript"></script>
+    <script src="{{ "/assets/main.js" | relative_url }}" type="text/javascript"></script>
+  </body>
+</html>

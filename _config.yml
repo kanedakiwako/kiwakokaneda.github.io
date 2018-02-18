@@ -1,0 +1,27 @@
+# Site settings
+title:          Kiwako Kaneda
+description:    "Kiwako Kaneda"
+baseurl:        "kiwakokaneda.github.io"
+url:            "http://kiwakokaneda.net"
+
+# Author
+author:
+  name:         Kiwako Kaneda
+  url:          http://kiwakokaneda.net
+  email:        kiwakokaneda@gmail.com
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
