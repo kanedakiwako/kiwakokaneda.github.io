@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "x a"
+title: "2018/02/19"
 author: "kiwakokaneda"
 ---
 
