@@ -1,7 +1,7 @@
 # Site settings
 title:          KiwakoKaneda
 description:    "KiwakoKaneda"
-baseurl:        "kiwakokaneda.github.io"
+baseurl:        ""
 url:            "http://kiwakokaneda.net"
 
 # Author
