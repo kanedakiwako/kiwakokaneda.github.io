@@ -1,10 +1,10 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "Kiwako Kaneda"
+  spec.name          = "KiwakoKaneda"
   spec.version       = "0.1.2"
-  spec.authors       = ["Kiwako Kaneda"]
-  spec.email         = ["Kiwako Kaneda"]
+  spec.authors       = ["KiwakoKaneda"]
+  spec.email         = ["kiwakokaneda@gmail.com"]
 
   spec.summary       = %q{Tale is a minimal Jekyll theme curated for storytellers.}
   spec.homepage      = "http://kiwakokaneda.net"
@@ -14,7 +14,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 3.6"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
-  spec.add_runtime_dependency "github-pages"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"

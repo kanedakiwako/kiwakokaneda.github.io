@@ -1,6 +1,6 @@
 ---
 layout: music
 title: "Music"
-author: "kiwako kaneda"
+author: "kiwakokaneda"
 permalink: /music/
 ---

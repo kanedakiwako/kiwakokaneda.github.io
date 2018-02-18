@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "About"
-author: "kiwako kaneda"
+author: "kiwakokaneda"
 permalink: /about/
 ---
 

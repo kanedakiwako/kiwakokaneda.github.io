@@ -1,12 +1,12 @@
 # Site settings
-title:          Kiwako Kaneda
-description:    "Kiwako Kaneda"
+title:          KiwakoKaneda
+description:    "KiwakoKaneda"
 baseurl:        "kiwakokaneda.github.io"
 url:            "http://kiwakokaneda.net"
 
 # Author
 author:
-  name:         Kiwako Kaneda
+  name:         KiwakoKaneda
   url:          http://kiwakokaneda.net
   email:        kiwakokaneda@gmail.com
 
