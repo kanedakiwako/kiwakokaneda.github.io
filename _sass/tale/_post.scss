@@ -1,6 +1,21 @@
 .post {
   padding: 3rem 0;
 
+  > .about {
+    text-align: center;
+    > p {
+      text-align: center;
+      > span {
+        display: inline-block;
+        padding: 4rem 0;
+        font-size: 1.5rem;
+      }
+      > img {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
   &-info {
     color: $default-tint;
     font-family: $serif-secondary;
@@ -46,5 +61,19 @@
     font-size: 0.9rem;
     font-style: normal;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .post {
+    > .about {
+      text-align: left;
+      > p {
+        text-align: left;
+        > img {
+          width: 80% !important;
+        }
+      }
+    }
   }
 }
