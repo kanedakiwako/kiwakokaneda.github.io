@@ -5,6 +5,10 @@
     text-align: left;
     > p {
       text-align: left;
+      &.head {
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
       > img {
         margin-bottom: 90px;
       }
