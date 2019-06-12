@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { Label } from './Label'
 
 export default class Posts extends React.Component {
@@ -15,14 +16,12 @@ export default class Posts extends React.Component {
         <Label />
         <div className="about">
           {posts.map((item, index) => {
-            const { data: { title, date, contents } } = item
+            const { id, data: { title, date } } = item
             const postTitle = title[0].text
             const postDate = date
-            const postText = contents[0].text
            return (
              <div key={index}>
-                <h2>{postTitle}<span>{postDate}</span></h2>
-                <p>{postText}</p>
+                <Link to={`post/${id}`}><h2>{postTitle}<span>{postDate}</span></h2></Link>
              </div>
            )
           })}
@@ -32,7 +31,7 @@ export default class Posts extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://kiwako-kaneda.prismic.io/api/v2/documents/search?ref=XQAzAhIAAFM7imjV#format=html')
+    fetch('https://kiwako-kaneda.prismic.io/api/v2/documents/search?ref=XQAzAhIAAFM7imjV#format=json')
     .then(response => {
       return response.json();
     })
