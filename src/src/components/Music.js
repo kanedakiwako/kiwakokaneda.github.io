@@ -28,7 +28,7 @@ export const Music = () => {
                 <li>8.洪水</li>
                 <li>9.elephant kitchen</li>
                 <li>10.カーテンコール</li>
-                <li><a href="http://www.eclipsis.gr/" target="_blank">eclipsis #2</a></li>
+                <li><a href="http://www.eclipsis.gr/" target="_blank" rel="noopener noreferrer">eclipsis #2</a></li>
               </ul>
             </div>
           </article>
@@ -50,7 +50,7 @@ export const Music = () => {
                 <li>5.お日さまのフォーク</li>
                 <li>6.カラー・ポケット・ブック</li>
                 <li>7.まちにすんだら</li>
-                <li><a href="http://www.finderpoplabel.com/catalog/cvcd013.html" target="_blank">cvcd013</a></li>
+                <li><a href="http://www.finderpoplabel.com/catalog/cvcd013.html" target="_blank" rel="noopener noreferrer">cvcd013</a></li>
               </ul>
             </div>
           </article>

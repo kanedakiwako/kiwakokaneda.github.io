@@ -1,47 +1,52 @@
 
 import React from 'react';
+import Prismic from 'prismic-javascript';
+import { RichText } from 'prismic-reactjs';
+import { formatDate } from '../utils'
 
 export default class Post extends React.Component {
 
   state = {
-    post: {
-      title: '',
-      date: '',
-      contents: ''
-    }
+    data: {}
   }
 
   render() {
-    const { post: { title, date, contents } } = this.state
-    const postTitle = title && title[0].text
-    const postDate = date
-    const postContents = contents && contents[0].text
+    const { data: { title, date, contents } } = this.state
+    const postDate = date ? formatDate(date) : ''
     return (
       <div className="post">
-        <div className="about">
-          <h2>{postTitle}</h2>
+        <div className="post__blog">
+          {RichText.render(title)}
+          <p>{postDate}</p>
+          {RichText.render(contents)}
         </div>
       </div>
     )
   }
 
   componentDidMount() {
-    fetch('https://kiwako-kaneda.prismic.io/api/v2/documents/search?ref=XQAzAhIAAFM7imjV#format=json')
-    .then(response => {
-      return response.json();
-    })
-    .then(myJson => {
-      const { results } = myJson
-      const blogId = window.location.pathname.replace('/post/', '')
-      const currentBlog = myJson && results.find(item => item.id === blogId)
-      const { data: { title, date, contents } } = currentBlog
-      this.setState({
-        post: {
-          title,
-          date,
-          contents
+
+    const apiEndpoint = 'https://kiwako-kaneda.prismic.io/api/v2';
+    Prismic.api(apiEndpoint).then(api => {
+      api.query(
+        Prismic.Predicates.at('document.type', 'posts'),
+        { orderings : '[document.last_publication_date desc]' }
+      ).then(response => {
+        if (response) {
+          const { results } = response
+          const blogId = window.location.pathname.replace('/post/', '')
+          const currentBlog = response && results.find(item => item.id === blogId)
+          const { data: { title, date, contents } } = currentBlog
+          console.log(currentBlog);
+          this.setState({
+            data: {
+              title,
+              date,
+              contents
+            }
+          })
         }
-      })
+      });
     });
   }
 }

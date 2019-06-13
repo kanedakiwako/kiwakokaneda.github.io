@@ -18,7 +18,9 @@ footer,
   overflow: auto;
 
   &-container {
-    margin: 4rem auto;
+    margin: 4rem 0;
+    width: 100%;
+    max-width: 800px;
     position: relative;
     text-align: center;
     > a {
@@ -104,4 +106,9 @@ footer {
     color: $default-color;
     font-size: .8rem;
   }
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: .8rem;
 }
