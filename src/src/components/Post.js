@@ -37,7 +37,6 @@ export default class Post extends React.Component {
           const blogId = window.location.pathname.replace('/post/', '')
           const currentBlog = response && results.find(item => item.id === blogId)
           const { data: { title, date, contents } } = currentBlog
-          console.log(currentBlog);
           this.setState({
             data: {
               title,
